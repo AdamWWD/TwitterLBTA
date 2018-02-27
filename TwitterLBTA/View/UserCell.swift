@@ -69,7 +69,7 @@ class UserCell: DatasourceCell {
     
     override func setupViews() {
         super.setupViews()
-        
+
         separatorLineView.isHidden = false
         separatorLineView.backgroundColor = UIColor(r:230, g:230, b:230)
         

@@ -11,10 +11,13 @@ import LBTAComponents
 class HomeDatasource: Datasource {
     
     let users:[User] = {
-        let brianUser = User(name: "Ironman", username: "@iromman", bioText: "I'm Ironman", profileImage: #imageLiteral(resourceName: "IronMan"))
-        let rayUser = User(name: "batman", username: "@batman", bioText: "Ray Wenderlich is an iPhone develop and tweets on topics related to iPhone, software, and gaming. Chect out our conference.", profileImage:#imageLiteral(resourceName: "batman"))
+        let brianUser = User(name: "Ironman", username: "@iromman", bioText: "Iron Man is a fictional superhero appearing in American comic books published by Marvel Comics. The character was created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby. The character made his first appearance in Tales of Suspense #39 (cover dated March 1963).", profileImage: #imageLiteral(resourceName: "IronMan"))
+        let batman = User(name: "batman", username: "@batman", bioText: "Batman is a fictional superhero appearing in American comic books published by DC Comics. The character was created by artist Bob Kane and writer Bill Finger,[4][5] and first appeared in Detective Comics #27 (1939). ", profileImage:#imageLiteral(resourceName: "batman"))
         
-        return [brianUser, rayUser]
+        let thor = User(name: "Thor", username: "@Thor", bioText: "Thor is a fictional superhero appearing in American comic books published by Marvel Comics. .", profileImage: #imageLiteral(resourceName: "Thor"))
+        
+        
+        return [brianUser, batman, thor]
     }()
     
 //    let words = ["user1", "user2", "user3"]
