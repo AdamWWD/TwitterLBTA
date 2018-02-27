@@ -1,55 +1,22 @@
 //
-//  Cells.swift
+//  UserCell.swift
 //  TwitterLBTA
 //
-//  Created by adamwang on 2018/2/22.
+//  Created by adamwang on 2018/2/27.
 //  Copyright © 2018年 adamwang. All rights reserved.
 //
 
 import LBTAComponents
 
-let twitterBlue = UIColor(r: 61, g: 167, b:244)
-
-class UserFooter: DatasourceCell {
-    
-    let textLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Show me more"
-        label.font = UIFont.systemFont(ofSize: 16)
-        label.textColor = twitterBlue
-        return label
-    }()
-    
-    override func setupViews() {
-        super.setupViews()
-        
-        addSubview(textLabel)
-        textLabel.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 12, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
-    }
-}
-
-class UserHeader: DatasourceCell {
-    
-    let textLabel: UILabel = {
-        let label = UILabel()
-        label.text = "WHO TO FOLLOW"
-        label.font = UIFont.systemFont(ofSize: 16)
-        return label
-    }()
-    
-    override func setupViews() {
-        super.setupViews()
-        
-        addSubview(textLabel)
-        textLabel.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 12, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
-    }
-}
-
 class UserCell: DatasourceCell {
     
-    override var datasourceItem: Any?{
-        didSet {
-//            nameLabel.text = datasourceItem as? String
+    override var datasourceItem: Any? {
+        didSet{
+            guard let user = datasourceItem as? User else { return }
+            nameLabel.text = user.name
+            usernameLabel.text = user.username
+            bioTextView.text = user.bioText
+            profileImageView.image = user.profileImage
         }
     }
     
@@ -96,12 +63,15 @@ class UserCell: DatasourceCell {
         button.setImage(#imageLiteral(resourceName: "follow"), for: .normal)
         button.imageView?.contentMode = .scaleAspectFit
         button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -8, bottom: 0, right: 0)
-//        button.titleEdgeInsets = UIEdgeInsets
+        //        button.titleEdgeInsets = UIEdgeInsets
         return button
     }()
-
+    
     override func setupViews() {
         super.setupViews()
+        
+        separatorLineView.isHidden = false
+        separatorLineView.backgroundColor = UIColor(r:230, g:230, b:230)
         
         addSubview(profileImageView)
         addSubview(nameLabel)
@@ -118,12 +88,6 @@ class UserCell: DatasourceCell {
         bioTextView.anchor(usernameLabel.bottomAnchor, left: usernameLabel.leftAnchor, bottom: self.bottomAnchor, right: self.rightAnchor, topConstant: -4, leftConstant: -4, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
         
         followButton.anchor(topAnchor, left: nil, bottom: nil, right: self.rightAnchor, topConstant: 12, leftConstant: 0, bottomConstant: 0, rightConstant: 12, widthConstant: 120, heightConstant: 34)
-        
-        
-        
-        
-        
     }
 }
-
 

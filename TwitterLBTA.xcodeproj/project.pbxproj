@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0397BB417B1DCE0BD8B08617 /* Pods_TwitterLBTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F68AC0B3CD4DA937BBFA0E /* Pods_TwitterLBTA.framework */; };
+		741163A2204528CE00958C73 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741163A1204528CE00958C73 /* User.swift */; };
+		741163A42045363600958C73 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741163A32045363600958C73 /* UserCell.swift */; };
 		742D1334203E7D65008111A8 /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D1333203E7D65008111A8 /* HomeDatasourceController.swift */; };
-		742D1339203E870B008111A8 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D1338203E870B008111A8 /* Cells.swift */; };
+		742D1339203E870B008111A8 /* UserHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D1338203E870B008111A8 /* UserHeaderFooter.swift */; };
 		742D133B203E8794008111A8 /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D133A203E8794008111A8 /* HomeDatasource.swift */; };
 		74C8D1042033E0DF005BF7E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C8D1032033E0DF005BF7E7 /* AppDelegate.swift */; };
 		74C8D10B2033E0DF005BF7E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74C8D10A2033E0DF005BF7E7 /* Assets.xcassets */; };
@@ -20,8 +22,10 @@
 /* Begin PBXFileReference section */
 		1CDD1972C65B9FD3167E1973 /* Pods-TwitterLBTA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterLBTA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterLBTA/Pods-TwitterLBTA.debug.xcconfig"; sourceTree = "<group>"; };
 		70F68AC0B3CD4DA937BBFA0E /* Pods_TwitterLBTA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterLBTA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		741163A1204528CE00958C73 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		741163A32045363600958C73 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		742D1333203E7D65008111A8 /* HomeDatasourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
-		742D1338203E870B008111A8 /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		742D1338203E870B008111A8 /* UserHeaderFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeaderFooter.swift; sourceTree = "<group>"; };
 		742D133A203E8794008111A8 /* HomeDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
 		74C8D1002033E0DF005BF7E7 /* TwitterLBTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterLBTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C8D1032033E0DF005BF7E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				742D133A203E8794008111A8 /* HomeDatasource.swift */,
+				741163A1204528CE00958C73 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -63,7 +68,8 @@
 		742D1337203E86CD008111A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				742D1338203E870B008111A8 /* Cells.swift */,
+				742D1338203E870B008111A8 /* UserHeaderFooter.swift */,
+				741163A32045363600958C73 /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -248,9 +254,11 @@
 			files = (
 				742D133B203E8794008111A8 /* HomeDatasource.swift in Sources */,
 				74C8D1042033E0DF005BF7E7 /* AppDelegate.swift in Sources */,
-				742D1339203E870B008111A8 /* Cells.swift in Sources */,
+				741163A2204528CE00958C73 /* User.swift in Sources */,
+				742D1339203E870B008111A8 /* UserHeaderFooter.swift in Sources */,
 				742D1334203E7D65008111A8 /* HomeDatasourceController.swift in Sources */,
 				74C8D1162033E274005BF7E7 /* HomeController.swift in Sources */,
+				741163A42045363600958C73 /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
