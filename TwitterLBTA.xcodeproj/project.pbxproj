@@ -10,6 +10,7 @@
 		0397BB417B1DCE0BD8B08617 /* Pods_TwitterLBTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F68AC0B3CD4DA937BBFA0E /* Pods_TwitterLBTA.framework */; };
 		741163A2204528CE00958C73 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741163A1204528CE00958C73 /* User.swift */; };
 		741163A42045363600958C73 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741163A32045363600958C73 /* UserCell.swift */; };
+		741163A62047C48900958C73 /* HomeDatasourceController+navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741163A52047C48900958C73 /* HomeDatasourceController+navbar.swift */; };
 		742D1334203E7D65008111A8 /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D1333203E7D65008111A8 /* HomeDatasourceController.swift */; };
 		742D1339203E870B008111A8 /* UserHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D1338203E870B008111A8 /* UserHeaderFooter.swift */; };
 		742D133B203E8794008111A8 /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D133A203E8794008111A8 /* HomeDatasource.swift */; };
@@ -24,6 +25,7 @@
 		70F68AC0B3CD4DA937BBFA0E /* Pods_TwitterLBTA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterLBTA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		741163A1204528CE00958C73 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		741163A32045363600958C73 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		741163A52047C48900958C73 /* HomeDatasourceController+navbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeDatasourceController+navbar.swift"; sourceTree = "<group>"; };
 		742D1333203E7D65008111A8 /* HomeDatasourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
 		742D1338203E870B008111A8 /* UserHeaderFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeaderFooter.swift; sourceTree = "<group>"; };
 		742D133A203E8794008111A8 /* HomeDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				742D1333203E7D65008111A8 /* HomeDatasourceController.swift */,
+				741163A52047C48900958C73 /* HomeDatasourceController+navbar.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				741163A2204528CE00958C73 /* User.swift in Sources */,
 				742D1339203E870B008111A8 /* UserHeaderFooter.swift in Sources */,
 				742D1334203E7D65008111A8 /* HomeDatasourceController.swift in Sources */,
+				741163A62047C48900958C73 /* HomeDatasourceController+navbar.swift in Sources */,
 				74C8D1162033E274005BF7E7 /* HomeController.swift in Sources */,
 				741163A42045363600958C73 /* UserCell.swift in Sources */,
 			);
