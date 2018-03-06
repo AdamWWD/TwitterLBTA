@@ -15,6 +15,7 @@
 		742D1334203E7D65008111A8 /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D1333203E7D65008111A8 /* HomeDatasourceController.swift */; };
 		742D1339203E870B008111A8 /* UserHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D1338203E870B008111A8 /* UserHeaderFooter.swift */; };
 		742D133B203E8794008111A8 /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D133A203E8794008111A8 /* HomeDatasource.swift */; };
+		746D4C61204E336300564389 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D4C60204E336300564389 /* Service.swift */; };
 		74C0D19F204CF0BB0091BCAD /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C0D19E204CF0BB0091BCAD /* Tweet.swift */; };
 		74C8D1042033E0DF005BF7E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C8D1032033E0DF005BF7E7 /* AppDelegate.swift */; };
 		74C8D10B2033E0DF005BF7E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74C8D10A2033E0DF005BF7E7 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		742D1333203E7D65008111A8 /* HomeDatasourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
 		742D1338203E870B008111A8 /* UserHeaderFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeaderFooter.swift; sourceTree = "<group>"; };
 		742D133A203E8794008111A8 /* HomeDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
+		746D4C60204E336300564389 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		74C0D19E204CF0BB0091BCAD /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		74C8D1002033E0DF005BF7E7 /* TwitterLBTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterLBTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C8D1032033E0DF005BF7E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		746D4C5F204E334700564389 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				746D4C60204E336300564389 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		74C8D0F72033E0DF005BF7E7 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +114,7 @@
 		74C8D1022033E0DF005BF7E7 /* TwitterLBTA */ = {
 			isa = PBXGroup;
 			children = (
+				746D4C5F204E334700564389 /* Service */,
 				742D1337203E86CD008111A8 /* View */,
 				742D1336203E86C0008111A8 /* Model */,
 				742D1335203E86A8008111A8 /* Controller */,
@@ -275,6 +286,7 @@
 				742D1339203E870B008111A8 /* UserHeaderFooter.swift in Sources */,
 				742D1334203E7D65008111A8 /* HomeDatasourceController.swift in Sources */,
 				741163A62047C48900958C73 /* HomeDatasourceController+navbar.swift in Sources */,
+				746D4C61204E336300564389 /* Service.swift in Sources */,
 				74C8D1162033E274005BF7E7 /* HomeController.swift in Sources */,
 				741163A42045363600958C73 /* UserCell.swift in Sources */,
 			);
