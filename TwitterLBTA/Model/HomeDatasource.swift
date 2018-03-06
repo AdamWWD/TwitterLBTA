@@ -7,19 +7,28 @@
 //
 
 import LBTAComponents
+import TRON
+import SwiftyJSON
 
-class HomeDatasource: Datasource {
+class HomeDatasource: Datasource, JSONDecodable {
     
-    let users:[User] = {
-        let ironManUser = User(name: "Ironman", username: "@iromman", bioText: "Iron Man is a fictional superhero appearing in American comic books published by Marvel Comics. The character was created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby. The character made his first appearance in Tales of Suspense #39 (cover dated March 1963).", profileImage: #imageLiteral(resourceName: "IronMan"))
-        let batman = User(name: "batman", username: "@batman", bioText: "Batman is a fictional superhero appearing in American comic books published by DC Comics. The character was created by artist Bob Kane and writer Bill Finger,[4][5] and first appeared in Detective Comics #27 (1939). ", profileImage:#imageLiteral(resourceName: "batman"))
-        
-        let thor = User(name: "Thor", username: "@Thor", bioText: "Thor is a fictional superhero appearing in American comic books published by Marvel Comics. .", profileImage: #imageLiteral(resourceName: "Thor"))
-        
-        
-        return [ironManUser, batman, thor]
-    }()
+    let users: [User]
     
+    required init(json: JSON) throws {
+        var users = [User]()
+        
+        let array = json["users"].array
+        for userJSON in array! {
+            let name = userJSON["name"].stringValue
+            let username = userJSON["username"].stringValue
+            let bio = userJSON["bio"].stringValue
+            let user = User(name: name, username: username, bioText: bio, profileImage: UIImage())
+            users.append(user)
+        }
+        
+        self.users = users
+    }
+
     let tweets:[Tweet] = {
         
         let ironManUser = User(name: "Ironman", username: "@iromman", bioText: "Iron Man is a fictional superhero appearing in American comic books published by Marvel Comics. The character was created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby. The character made his first appearance in Tales of Suspense #39 (cover dated March 1963).", profileImage: #imageLiteral(resourceName: "IronMan"))
